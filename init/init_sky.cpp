@@ -92,4 +92,6 @@ void vendor_load_properties() {
 
     // Set hardware revision
     property_override("ro.boot.hardware.revision", GetProperty("ro.boot.hwversion", "").c_str());
+    property_override("ro.rising.chipset", "Snapdragon 4 Gen 2");
+    property_override("ro.rising.maintainer", "hancscape | honokascape");
 }
