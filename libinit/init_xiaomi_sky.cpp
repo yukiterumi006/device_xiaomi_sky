@@ -137,4 +137,6 @@ static const std::vector<variant_info_t> variants = {
 
 void vendor_load_properties() {
     search_variant(variants);
+    property_override("ro.rising.chipset", "Snapdragon 4 Gen 2");
+    property_override("ro.rising.maintainer", "honokascape | cometscape");
 }
