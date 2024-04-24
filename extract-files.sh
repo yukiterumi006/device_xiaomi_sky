@@ -128,6 +128,9 @@ function blob_fixup() {
     vendor/lib64/libhme.so)
         "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
         ;;
+    vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so)
+        "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+        ;;
     esac
 }
 
