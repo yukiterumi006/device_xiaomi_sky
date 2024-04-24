@@ -20,6 +20,8 @@ $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
 
 # Inherit common LineageOS configurations
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+TARGET_ENABLE_BLUR := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
 
 # Device identifier
 PRODUCT_DEVICE := sky
